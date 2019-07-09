@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animals</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body id="wholeThing">
+
+<div class="jumbotron" id="header">
+  <img id="topImageL" src="assets/images/giphy-left.gif">
+  <img id="topImageR" src="assets/images/giphy-right.gif">
+  <h1>Animal GIFs</h1>
+  <h4>Click the buttons to display gifs of animals<br>Click the GIPHYs to pause and play<br>Search to add animals</h4>
+</div>
+
+<form class="form-inline" id="animalSearch">
+  <div class="form-group">
+    <label for="animalInput">Search for Animals</label>
+    <input type="text" id="animalInput">
+  </div>
+  <!-- Button triggers show to be added -->
+  <input id="addShow" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="show" data-search="Dogs">Dogs</button>
+      <button class="btn btn-primary" id="show" data-search="Cats">Cats</button>
+      <button class="btn btn-primary" id="show" data-search="Anteaters">Anteaters</button>
+      <button class="btn btn-primary" id="show" data-search="Cows">Cows</button>
+
+      <div id="myButtons"></div>
+    </div> <!--end of button group -->
+  </div> <!--end of container -->
+</div> <!--end of row -->
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div> <!--end of container -->
+</div> <!-- end of row  -->
+
+
+<script type="text/javascript" src="assets/javascript/app.js"</script></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
